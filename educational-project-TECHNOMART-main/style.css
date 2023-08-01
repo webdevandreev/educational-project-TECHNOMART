@@ -60,6 +60,24 @@ img {
   background-color: #293449;
 }
 
+.wrapper {
+  display: flex;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 220px;
+  height: 100%;
+  background-color: #EE3643;
+  box-shadow: 0px 5px 0px 0px #b52933;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu-search {
   position: relative;
   width: 270px;
@@ -104,25 +122,12 @@ img {
   color: white;
 }
 
-.wrapper {
-  display: flex;
-  width: 940px;
-  height: 100%;
-  margin: 0 auto;
-  align-items: center;
+.button-menu {
+  text-transform: none;
+  color: white;
 }
 
-.logo {
-  display: flex;
-  width: 220px;
-  height: 100%;
-  background-color: #EE3643;
-  box-shadow: 0px 5px 0px 0px #b52933;
-  align-items: center;
-  justify-content: center;
-}
-
-
+.button-menu svg {}
 
 .footer {
   background-color: dodgerblue;
