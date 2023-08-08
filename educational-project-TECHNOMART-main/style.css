@@ -76,7 +76,8 @@ img {
   box-shadow: 0px 5px 0px 0px #b52933;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /*поправить в каталоге*/
+  cursor: pointer;
+  /*поправить в каталоге*/
 }
 
 .logo:focus {
@@ -88,6 +89,10 @@ img {
   position: relative;
   width: 270px;
   height: 100%;
+}
+
+.menu-search:hover g {
+  opacity: 1;
 }
 
 .menu-input {
@@ -121,8 +126,18 @@ img {
   border: 0;
 }
 
-.menu-search:hover g {
+.menu-input:focus,
+.menu-input:active {
+  background-color: white;
+  color: black;
+}
+
+.menu-input:focus + .menu-label .menu-icon g {
   opacity: 1;
+}
+
+.menu-input:focus + .menu-label .menu-icon path {
+  fill: #ee3643;
 }
 
 ::placeholder {
@@ -139,7 +154,6 @@ img {
   justify-content: center;
 }
 
-
 .wrapper a:nth-of-type(2) {
   padding-right: 5px;
 }
@@ -150,6 +164,15 @@ img {
 
 .button-menu:hover g {
   opacity: 1;
+}
+
+.button-menu:focus g {
+  opacity: .3;
+}
+
+.button-menu:focus {
+  background-color: rgba(22, 29, 41, 1);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .icon-bookmark {
@@ -177,8 +200,31 @@ img {
   background-color: #5FBB2D;
 }
 
+.order-button:focus {
+  background-color: rgba(99, 166, 62, 1);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.info {
+  margin-top: 46px;
+  align-items: flex-start;
+}
+
+.caption {
+  margin-left: 53px;
+  margin-top: 1px;
+}
+
+.phone {
+  display: flex;
+  width: 270px;
+  height: 45px;
+  background-color: blue;
+  color: white;
+}
+
 .footer {
-  background-color: dodgerblue;
+  background-color: #32425C;
   justify-content: center;
   text-align: center;
 }
