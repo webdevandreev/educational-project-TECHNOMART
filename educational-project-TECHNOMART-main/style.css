@@ -356,6 +356,34 @@ img {
   margin-right: 0;
 }
 
+.slide-features {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    outline: 1px dashed grey;
+}
+
+.slide {
+    width: 620px;
+    height: 266px;
+    background-color: lightblue;
+    outline: 1px dashed grey;
+}
+
+.slide-features .features-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 20px;
+    outline: 1px dashed grey;  
+}
+
+.slide-features .features-list .features-item:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
 .footer {
   background-color: #32425C;
   justify-content: center;
