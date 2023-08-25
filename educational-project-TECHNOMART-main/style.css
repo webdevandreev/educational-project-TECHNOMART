@@ -421,6 +421,28 @@ img {
     justify-content: center;
 }
 
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    min-height: 427px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: lightblue;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px dashed grey;
+    list-style: none;
+}
+
+.card-item {
+    display: inherit;
+    width: 220px;
+    min-height: 318px;
+    background-color: gray;
+    
+}
+
 .footer {
     background-color: #32425C;
     justify-content: center;
