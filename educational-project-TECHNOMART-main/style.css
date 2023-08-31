@@ -267,6 +267,47 @@ img {
   display: flex;
 }
 
+.auth-catalog {
+  flex-direction: column;
+  margin-left: 49px;
+}
+
+.user-name {
+  display: inherit;
+  margin: 0;
+  width: 299px;
+  height: 45px;
+  background-color: white;
+  text-transform: none;
+  font-family: 'Cuprum';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name::before {
+  content: "";
+  width: 18px;
+  height: 19px;
+  margin-right: 21px;
+  background-image: url(img/icon-header/icon-phone.svg);
+}
+
+.user-name::after {
+  content: "";
+  width: 18px;
+  height: 19px;
+  margin-left: 20px;
+  background-image: url(img/icon-header/icon-phone.svg);
+}
+
+.account-list {
+  margin: 0;
+}
+
 .log-in {
   display: inline-flex;
   width: 121px;
@@ -283,12 +324,20 @@ img {
   background-color: white;
 }
 
+.log-in:hover {
+  color: red;
+}
+
 .log-in::before {
   content: "";
   width: 20px;
   height: 17px;
   margin-right: 6px;
   background-image: url(img/icon-header/icon-login-in.svg);
+}
+
+.log-in:hover.log-in::before {
+  background-image: url(img/icon-header/icon-login-hover.svg);
 }
 
 .register {
@@ -305,6 +354,34 @@ img {
   line-height: 21px;
   color: black;
   background-color: white;
+}
+
+.account-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-top: 7px;
+  min-height: 18px;
+  background-color: #F1F5F7;
+  list-style: inside;
+  justify-content: center;
+}
+
+.account-item {
+  color: #32425C;
+  text-align: center;
+  font-feature-settings: 'clig'off, 'liga'off;
+  font-family: 'Cuprum';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.account-item:nth-of-type(1) {
+  list-style: none;
+  margin-right: 16px;
 }
 
 .nav-list {
