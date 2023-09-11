@@ -1,1 +1,1 @@
-# educational-project-NERDS
+# educational-project-TECHNOMART
