@@ -6,6 +6,45 @@
         url(fonts/cuprum.woff2) format("woff2");
 }
 
+@font-face {
+    font-family: "Cuprum Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/cuprumbold.woff) format("woff"),
+        url(fonts/cuprumbold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/ptsans.woff) format("woff"),
+        url(fonts/ptsans.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/ptsansbold.woff) format("woff"),
+        url(fonts/ptsansbold.woff2) format("woff2");
+}
+
+:root {
+  --basic-black: #000;
+  --basic-white: #fff;
+}
+
+.features-item p {
+    font-family: 'Cuprum Bold';
+    font-size: 24px;
+    font-style: normal;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: none;
+    /* 125% */
+}
+
 *,
 *::before,
 *::after {
@@ -20,14 +59,14 @@
     display: grid;
     max-width: 1200px;
     min-width: 940px;
+    min-height: 100%;
     margin: 0 auto;
     padding: 0;
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 26px;
-    text-transform: uppercase;
     background-color: #f2f2f2;
-    min-height: 100%;
+    text-transform: uppercase;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
     position: relative;
@@ -128,6 +167,7 @@ img {
     color: black;
 }
 
+/* смежные селекторы A + B */
 .menu-input:focus + .menu-label .menu-icon g {
     opacity: 1;
 }
@@ -288,6 +328,7 @@ img {
 .user-name:hover.user-name::before {
     background-image: url(img/icon-header/icon-user-hover.svg);
 }
+
 .user-name:hover.user-name::after {
     background-image: url(img/icon-header/icon-logout-hover.svg);
 }
@@ -374,7 +415,7 @@ img {
 }
 
 .register:active {
-    color: #C5C5C5; 
+    color: #C5C5C5;
 }
 
 .account-list {
