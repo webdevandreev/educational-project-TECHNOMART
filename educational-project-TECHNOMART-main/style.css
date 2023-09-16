@@ -82,6 +82,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   min-width: 940px;
   background-color: #F1F5F7;
@@ -666,6 +679,48 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.modal-write {
+  display: none;
+  position: fixed;
+  width: 620px;
+  height: 430px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #aef;
+}
+
+.modal-close {
+  position: absolute;
+  top: 21px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-map {
+  display: block;
+  position: fixed;
+  width: 943px;
+  height: 449px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #aef;
+}
+
+.modal-map img {
+  display: block;
+}
+
 
 .modal input::placeholder {
   color: #A9A9A9;

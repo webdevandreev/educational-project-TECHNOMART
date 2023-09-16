@@ -152,24 +152,30 @@
       <p>подвал</p>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal modal-write">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p><label for="your-name">Ваше имя:</label>
-      <input class="write-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия"></p>
-      <p><label for="your-mail">Ваш e-mail:</label>
-        <input class="write-mail" id="your-mail" type="email" name="email" placeholder="email@example.com"></p>
-      <p><label for="text-letter">Текст письма:</label>
-        <textarea class="text-letter" id="text-letter" name="text-letter" rows="5" cols="33">В свободной форме</textarea></p>
+      <p>
+        <label for="your-name">Ваше имя:</label>
+        <input class="write-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="your-mail">Ваш e-mail:</label>
+        <input class="write-mail" id="your-mail" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="text-letter">Текст письма:</label>
+        <textarea class="text-letter" id="text-letter" name="text-letter" rows="5" cols="33">В свободной форме</textarea>
+      </p>
       <button type="submit">отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <section>
-  <h2>Как до нас добраться</h2>
-  <!-- Здесь будет карта -->
-  <button type="button">Закрыть</button>
-</section>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/icon-main/map-modal.png" width="943" height="449" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
   <script src="login.js"></script>
 
