@@ -33,16 +33,7 @@
 :root {
   --basic-black: #000;
   --basic-white: #fff;
-}
-
-.features-item p {
-  font-family: 'Cuprum Bold';
-  font-size: 24px;
-  font-style: normal;
-  line-height: 30px;
-  color: var(--basic-black);
-  text-transform: none;
-  /* 125% */
+  --special-yellow: #ffbf47;
 }
 
 *,
@@ -80,19 +71,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .header {
@@ -507,21 +485,97 @@ img {
   padding: 0;
 }
 
+.main > .features-list:nth-of-type(1) {
+  margin: 59px auto 20px auto;
+
+}
+
 .features-item {
+  position: relative;
   width: 300px;
   height: 123px;
   outline: 1px dashed grey;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 .features-item:nth-of-type(3) {
   margin-right: 0;
 }
 
+.features-item p {
+  font-family: 'Cuprum Bold';
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
+  color: var(--basic-white);
+  text-transform: none;
+}
+
+.features-item a {
+  display: flex;
+  width: 135px;
+  height: 38px;
+  font-family: 'Cuprum';
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(255, 255, 255, .3);
+  color: var(--basic-white);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main .features-item:nth-of-type(1) {
+  background-color: var(--special-yellow);
+}
+
+.main > .features-list .features-item:nth-of-type(1) a::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 52px;
+  right: 69px;
+  background-color: red;
+}
+
+.main .features-item:nth-of-type(2) {
+  background-color: #3BBCE3;
+}
+
+.main .features-item:nth-of-type(3) {
+  background-color: green;
+}
+
+.slide-features .features-item:nth-of-type(1) {
+  background-color: gray;
+}
+
+.slide-features .features-item:nth-of-type(2) {
+  background-color: var(--special-yellow);
+}
+
+.main > .features-list .features-item:nth-of-type(1)::after {
+  content: "new";
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  right: -26px;
+  top: 7px;
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+}
+
 .slide-features {
   display: flex;
   width: 940px;
-  margin: 0 auto;
+  margin: 0 auto 59px auto;
   flex-wrap: wrap;
   outline: 1px dashed grey;
 }
@@ -720,7 +774,6 @@ img {
 .modal-map img {
   display: block;
 }
-
 
 .modal input::placeholder {
   color: #A9A9A9;
