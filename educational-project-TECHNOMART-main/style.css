@@ -747,6 +747,10 @@ img {
   background-color: #aef;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
   top: 21px;
@@ -759,7 +763,7 @@ img {
 }
 
 .modal-map {
-  display: block;
+  display: none;
   position: fixed;
   width: 943px;
   height: 449px;
