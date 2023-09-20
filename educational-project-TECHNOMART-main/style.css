@@ -42,6 +42,21 @@
   box-sizing: border-box;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
 }
@@ -295,12 +310,14 @@ img {
 }
 
 .auth-catalog {
+  position: relative;
   flex-direction: column;
   margin-left: 49px;
 }
 
 .user-name {
   display: inherit;
+  padding-left: 17px;
   margin: 0;
   width: 299px;
   height: 45px;
@@ -311,7 +328,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  justify-content: center;
   align-items: center;
   color: black;
 }
@@ -320,10 +336,13 @@ img {
   background-image: url(img/icon-header/icon-user-hover.svg);
 }
 
-.user-name:hover.user-name::after {
-  background-image: url(img/icon-header/icon-logout-hover.svg);
+.user-name:active {
+  color: #C5C5C5;
 }
 
+.user-name:active.user-name::before {
+  background-image: url(img/icon-header/icon-user.svg);
+}
 
 .user-name::before {
   content: "";
@@ -333,17 +352,23 @@ img {
   background-image: url(img/icon-header/icon-user.svg);
 }
 
-.user-name::after {
-  content: "";
+.logout-button {
+  position: absolute;
   width: 20px;
   height: 17px;
-  margin-left: 20px;
-  background-image: url(img/icon-header/icon-login-out.svg);
+  top: 14px;
+  right: 17px;
+  bottom: 14px;
 }
 
-.account-list {
-  margin: 0;
+.logout-button:hover path {
+  fill: black;
 }
+
+.logout-button:active path {
+  fill: #C5C5C5;
+}
+
 
 .log-in {
   display: inline-flex;
@@ -414,6 +439,7 @@ img {
   flex-direction: row;
   padding: 0;
   margin-top: 7px;
+  margin: 0;
   min-height: 18px;
   background-color: #F1F5F7;
   list-style: inside;
@@ -435,6 +461,14 @@ img {
 .account-item:nth-of-type(1) {
   list-style: none;
   margin-right: 16px;
+}
+
+.account-item:hover a {
+  color: #EE3643;
+}
+
+.account-item:active a {
+  color: #C5C5C5;
 }
 
 .nav-list {
