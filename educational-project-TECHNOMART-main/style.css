@@ -63,7 +63,7 @@ input[type="radio"].visually-hidden {
 
 .page-body {
   display: grid;
-  max-width: 1200px;
+  width: 100%;
   min-width: 940px;
   min-height: 100%;
   margin: 0 auto;
@@ -507,8 +507,21 @@ img {
 }
 
 .main {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
   background-color: white;
 }
+
+.crumbs {
+  display: flex;
+  width: 940px;
+  min-height: 18px;
+  margin: 0 auto;
+}
+
 
 .features-list {
   display: flex;
@@ -720,7 +733,102 @@ img {
 
 .filter {
   width: 220px;
-  min-height: 720px;
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 20px 0 26px 0;
+  border: none;
+}
+
+.filter-option,
+.power-options {
+  margin-bottom: 20px;
+  color: #000;
+  font-family: 'PT Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.power-options {
+  margin-bottom: 22px;
+}
+
+.range-controls {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #F7F3EC;
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #C5C5C5;
+}
+
+.range-controls .bar {
+  width: 83%;
+  height: 2px;
+  background: #63A63E;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #e1deda;
+  background-color: #ABABAB;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 159px;
+
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.max-price input {
+  margin-left: 8px;
+}
+
+.min-price input,
+.max-price input {
+  padding-left: 15px;
+  width: 95px;
+  height: 38px;
+  background-color: #F7F3EC;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .sorting {
@@ -750,7 +858,7 @@ img {
   display: flex;
   width: 100%;
   min-height: 522px;
-  background-color: lightblue;
+  background-color: #F1F5F7;
 }
 
 .contacts-main {
@@ -758,7 +866,6 @@ img {
   width: 940px;
   min-height: 356px;
   margin: auto;
-  background-color: aquamarine;
 }
 
 .footer {

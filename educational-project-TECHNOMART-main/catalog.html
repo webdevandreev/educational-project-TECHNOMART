@@ -86,33 +86,60 @@
     </nav>
   </header>
   <main class="main">
+   <div class="crumbs">
+     <p>каталог</p>
+     <p>каталог</p>
+     <p>каталог</p>
+   </div>
     <div class="popular-products">
       <p class="goods">перфораторы</p>
     </div>
     <div class="catalog-perforators">
       <div class="filter">
+        <p>фильтр:</p>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="filter-item">
+            <legend>цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 75%; margin-left: 8%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 73%"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  - <input type="number" name="max-price" value="30000">
+                </label>
+              </div>
+
+            </div>
+          </fieldset>
+          <fieldset class="filter">
             <legend>производители:</legend>
             <ul>
-              <li>
-                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
                 <label for="filter-bosch">bosch</label>
               </li>
-              <li>
-                <input type="checkbox" name="interskol" id="filter-interskol">
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
                 <label for="filter-interskol">интерскол</label>
               </li>
-              <li>
-                <input type="checkbox" name="makita" id="filter-makita" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
                 <label for="filter-makita">makita</label>
               </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label for="filter-dewalt">dewalt</label>
               </li>
-              <li>
-                <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label for="filter-hitachi">hitachi</label>
               </li>
             </ul>
@@ -120,12 +147,12 @@
           <fieldset>
             <legend>питание:</legend>
             <ul>
-              <li>
-                <input type="radio" name="power-group" value="battery" id="filter-battery">
+              <li class="power-options">
+                <input class="visually-hidden" type="radio" name="power-group" value="battery" id="filter-battery">
                 <label for="filter-battery">аккумуляторные</label>
               </li>
-              <li>
-                <input type="radio" name="power-group" value="from-mains" id="filter-from-mains" checked>
+              <li class="power-options">
+                <input class="visually-hidden" type="radio" name="power-group" value="from-mains" id="filter-from-mains" checked>
                 <label for="filter-from-mains">сетевые</label>
               </li>
             </ul>
@@ -154,7 +181,7 @@
       </div>
     </div>
     <div class="services"></div>
-    <div class="contacts-main"></div>
+    <div class="guide"></div>
   </main>
   <footer class="footer">
     <div>
