@@ -748,13 +748,46 @@ img {
 
 .filter-option,
 .power-options {
+  padding-left: 35px;
   margin-bottom: 20px;
-  color: #000;
   font-family: 'PT Sans';
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
+  color: #000;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: -36px;
+  background-image: url(img/icon-main/checkbox-off.svg);
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  top: 0px;
+  left: -36px;
+  background-image: url(img/icon-main/checkbox-on.svg);
+}
+
+.filter-option:hover label::before {
+  background-image: url(img/icon-main/checkbox-off-hover.svg);
+  background-repeat: no-repeat;
 }
 
 .power-options {
