@@ -771,7 +771,8 @@ img {
   color: #000;
 }
 
-.filter-option label {
+.filter-option label,
+.power-option label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -1022,7 +1023,7 @@ img {
 
 .description {
   margin: auto;
-  padding: 0 33px 0 0;
+  padding: 0 33px 20px 0;
   color: #000;
   font-family: 'PT Sans';
   font-size: 13px;
@@ -1051,24 +1052,22 @@ img {
   justify-content: center;
 }
 
-.footer-nav {
-  display: flex;
+.footer-title {
   min-height: 193px;
   background-color: #32425C;
 }
 
-.logo-menu {
+.footer-title-menu {
   display: flex;
   width: 940px;
-  margin: 0 auto;
+  margin: 0 auto 28px auto;
 }
 
 .footer-logo {
-  display: flex;
+  display: inherit;
   width: 220px;
-  height: 68px;
+  height: 62px;
   margin: 0 174px 0 auto;
-  margin-right: 174px;
   background-color: #EE3643;
   box-shadow: 0px 5px 0px 0px #b52933;
   align-items: center;
@@ -1077,11 +1076,14 @@ img {
 }
 
 .footer-menu {
-  display: flex;
+  display: inherit;
+  flex-wrap: wrap;
+  width: 546px;
+  min-height: 24px;
+  justify-content: space-between;
   padding: 0;
   margin: 37px auto 0 0;
   list-style: none;
-  font-feature-settings: 'clig'off, 'liga'off;
   font-family: 'Cuprum';
   font-size: 18px;
   font-style: normal;
@@ -1094,8 +1096,43 @@ img {
   color: var(--special-white);
 }
 
-.footer-menu li:nth-child(-n+4) {
-  margin-right: 58px;
+.footer-subtitle {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer-ads,
+.footer-ads a {
+  margin-right: 80px;
+  color: #F3F7F9;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.footer-submenu {
+  display: inherit;
+  padding: 0;
+  margin-top: 4px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 524px;
+  min-height: 24px;
+  list-style: none;
+}
+
+.footer-submenu a {
+  color: #FFD180;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
 }
 
 .social-network {
