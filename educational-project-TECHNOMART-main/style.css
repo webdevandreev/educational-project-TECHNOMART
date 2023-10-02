@@ -1135,10 +1135,43 @@ img {
   text-transform: none;
 }
 
-.social-network {
+.copyright-social-feedback {
+  display: flex;
   background-color: #293449;
   width: 100%;
   min-height: 107px;
+  color: var(--basic-white);
+}
+
+.copyright {
+  width: 226px;
+  height: 37px;
+  margin: auto;
+}
+
+.social-list {
+  display: inherit;
+  list-style: none;
+}
+
+.feedback-developer {
+  margin-right: auto;
+}
+
+.feedback-developer,
+.feedback-developer a {
+  display: inherit;
+  color: var(--basic-white);
+  text-transform: none;
+  font-family: 'Cuprum';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.feedback-developer p:nth-child(1) {
+  margin-right: 51px;
 }
 
 .modal-write {
