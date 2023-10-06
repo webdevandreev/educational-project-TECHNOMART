@@ -34,8 +34,17 @@
   --basic-black: #000;
   --basic-white: #fff;
   --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --special-red: #b52933;
+  --focus-red: #BA2732;
+  --dark-red: #8d1e26;
   --special-white: #F1F5F7;
   --special-yellow: #ffbf47;
+  --special-blue: #293449;
+  --special-grey: #C5C5C5;
+  --special-dark-blue: #161D29;
+  --success: #5FBB2D;
+
 }
 
 *,
@@ -84,14 +93,14 @@ img {
 
 .header {
   min-width: 940px;
-  background-color: #F1F5F7;
+  background-color: var(--special-white);
 }
 
 .menu {
   height: 42px;
   font-size: 17px;
   line-height: 18px;
-  background-color: #293449;
+  background-color: var(--special-blue);
 }
 
 .wrapper {
@@ -106,17 +115,16 @@ img {
   display: flex;
   width: 220px;
   height: 100%;
-  background-color: #EE3643;
-  box-shadow: 0px 5px 0px 0px #b52933;
+  background-color: var(--basic-red);
+  box-shadow: 0px 5px 0px 0px var(--special-red);
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /*поправить в каталоге*/
 }
 
 .logo:focus {
-  background-color: #BA2732;
-  box-shadow: 0px 5px 0px 0px #8d1e26;
+  background-color: var(--focus-red);
+  box-shadow: 0px 5px 0px 0px var(--dark-red);
 }
 
 .menu-search {
@@ -134,20 +142,20 @@ img {
   height: 100%;
   padding: 0 0 0 43px;
   border: none;
-  background-color: #293449;
-  color: #fff;
+  background-color: var(--special-blue);
+  color: var(basic-white);
   outline: none;
   cursor: pointer;
 }
 
 .menu-label {
   display: flex;
+  position: absolute;
   width: 49px;
   height: 100%;
   top: 0;
-  position: absolute;
-  cursor: pointer;
   justify-content: center;
+  cursor: pointer;
 }
 
 .menu-submit {
@@ -163,8 +171,8 @@ img {
 
 .menu-input:focus,
 .menu-input:active {
-  background-color: white;
-  color: black;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .menu-input:focus + .menu-label .menu-icon g {
@@ -172,21 +180,21 @@ img {
 }
 
 .menu-input:focus + .menu-label .menu-icon path {
-  fill: #ee3643;
+  fill: var(--basic-red);
 }
 
 ::placeholder {
-  color: white;
+  color: var(--basic-white);
 }
 
 .button-menu {
   display: flex;
   width: 150px;
   height: 42px;
-  color: white;
-  text-transform: none;
+  color: var(--basic-white);
   align-items: center;
   justify-content: center;
+  text-transform: none;
 }
 
 .wrapper a:nth-of-type(2) {
@@ -206,7 +214,7 @@ img {
 }
 
 .button-menu:focus {
-  background-color: rgba(22, 29, 41, 1);
+  background-color: var(-special-dark-blue);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -224,19 +232,19 @@ img {
   display: flex;
   width: 150px;
   height: 100%;
-  background-color: #63A63E;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
   align-items: center;
   justify-content: center;
   text-transform: none;
-  color: white;
 }
 
 .order-button:hover {
-  background-color: #5FBB2D;
+  background-color: var(--success);
 }
 
 .order-button:focus {
-  background-color: rgba(99, 166, 62, 1);
+  background-color: var(--basic-green);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -248,13 +256,11 @@ img {
 
 .caption {
   margin: 0 93px 0 31px;
-  text-transform: none;
-  color: #EE3643;
-  font-family: "Cuprum";
+  color: var(--basic-red);
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
   line-height: 23px;
+  text-transform: none;
 }
 
 .contacts {
@@ -269,15 +275,13 @@ img {
   width: 270px;
   height: 45px;
   padding-left: 39px;
-  color: #EE3643;
-  font-feature-settings: 'clig'off, 'liga'off;
-  font-family: 'Cuprum';
+  color: var(--basic-red);
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
   font-size: 21px;
   font-style: normal;
-  font-weight: 700;
   line-height: 30px;
   align-items: center;
-  border: 3px solid #FFF;
+  border: 3px solid var(--basic-white);
 }
 
 .phone::before {
@@ -290,10 +294,8 @@ img {
 
 .address {
   padding-top: 3px;
-  font-family: 'Cuprum';
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-transform: none;
 }
@@ -310,19 +312,16 @@ img {
 
 .user-name {
   display: inherit;
-  padding-left: 17px;
-  margin: 0;
   width: 299px;
   height: 45px;
-  background-color: white;
-  text-transform: none;
-  font-family: 'Cuprum';
+  padding-left: 17px;
+  margin: 0;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
   font-size: 21px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
   align-items: center;
-  color: black;
+  text-transform: none;
 }
 
 .user-name:hover.user-name::before {
@@ -330,7 +329,7 @@ img {
 }
 
 .user-name:active {
-  color: #C5C5C5;
+  color: var(--special-grey);
 }
 
 .user-name:active.user-name::before {
@@ -355,11 +354,11 @@ img {
 }
 
 .logout-button:hover path {
-  fill: black;
+  fill: var(--basic-black);
 }
 
 .logout-button:active path {
-  fill: #C5C5C5;
+  fill: var(--special-grey);
 }
 
 
@@ -368,23 +367,23 @@ img {
   width: 121px;
   height: 45px;
   margin-left: 64px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
   align-items: center;
   justify-content: center;
   text-transform: none;
-  text-align: center;
-  font-family: "Cuprum";
-  font-size: 21px;
-  line-height: 21px;
-  color: black;
-  background-color: white;
 }
 
-.log-in:hover {
-  color: red;
+.log-in:hover,
+.register:hover {
+  color: var(--basic-red);
 }
 
-.log-in:active {
-  color: #C5C5C5;
+.log-in:active,
+.register:active {
+  color: var(--special-grey);
 }
 
 .log-in::before {
@@ -408,44 +407,28 @@ img {
   width: 145px;
   height: 45px;
   margin-left: 18px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: none;
-  font-family: "Cuprum";
+  color: var(--basic-black);
+  background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
-  color: black;
-  background-color: white;
-}
-
-.register:hover {
-  color: red;
-}
-
-.register:active {
-  color: #C5C5C5;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
 }
 
 .account-list {
   display: flex;
+  min-height: 18px;
   padding: 7px;
   margin: 0;
-  min-height: 18px;
-  background-color: #F1F5F7;
+  background-color: var(special-white);
   list-style: inside;
   justify-content: center;
 }
 
 .account-item a {
   color: #32425C;
-  text-align: center;
-  font-feature-settings: 'clig'off, 'liga'off;
-  font-family: 'Cuprum';
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
   text-transform: none;
 }
 
@@ -455,7 +438,7 @@ img {
 }
 
 .account-item:hover a {
-  color: #EE3643;
+  color: var(--basic-red);
 }
 
 .account-item:active a {
