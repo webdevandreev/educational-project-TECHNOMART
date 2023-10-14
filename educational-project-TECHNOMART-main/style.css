@@ -795,19 +795,28 @@ img {
   display: inherit;
   width: 192px;
   height: 38px;
+  margin-right: 14px;
   color: var(--basic-white);
   background-color: var(--basic-red);
   align-items: center;
   justify-content: center;
 }
 
+.all-goods:hover {
+    background-color: var(--persian-red);
+}
+
+.all-goods:active {
+    background-color: var(--focus-red);
+}
+
 .cards-list {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
-  min-height: 427px;
+  min-height: 318px;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto 70px auto;
   justify-content: space-between;
   align-items: center;
   list-style: none;
