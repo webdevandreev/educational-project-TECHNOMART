@@ -778,7 +778,7 @@ img {
   display: flex;
   width: 940px;
   height: 89px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   background-color: var(--beige);
   justify-content: space-between;
   align-items: center;
@@ -821,28 +821,6 @@ img {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}
-
-.cards-list .card-item:nth-child(1) img {
-  margin-top: 5px;
-}
-
-.cards-list .card-item:nth-child(2) img {
-  margin-top: 28px;
-  margin-right: 13px;
-  margin-bottom: 38px;
-}
-
-.cards-list .card-item:nth-child(3) img {
-  margin-top: 21px;
-  margin-right: 9px;
-  margin-bottom: 29px;
-}
-
-.cards-list .card-item:nth-child(4) img {
-  margin-top: 28px;
-  margin-right: 13px;
-  margin-bottom: 38px;
 }
 
 .main .cards-list .card-item:nth-of-type(2n + 2)::after {
@@ -890,22 +868,9 @@ img {
   list-style: none;
 }
 
-.perforators-list .card-item img {
-  margin-top: 21px;
-  margin-right: 11px;
-}
-
 .perforators-list .card-itemn:nth-of-type(4) img {
   margin-top: 28px;
   margin-right: 13px;
-}
-
-.perforators-list .card-item p:nth-of-type(1) {
-  margin-top: 29px;
-}
-
-.perforators-list:nth-of-type(1) .card-item p:nth-of-type(1) {
-  margin-top: 29px;
 }
 
 .card-item {
@@ -937,23 +902,7 @@ img {
   text-decoration: line-through;
 }
 
-.card-item:nth-of-type(1) p:nth-of-type(1) {
-  margin-top: 10px;
-}
-
-.card-item:nth-of-type(1) > p:nth-of-type(2) {
-  padding-top: 7px;
-}
-
-.card-item:nth-of-type(2) > p:nth-of-type(2) {
-  padding-top: 7px;
-}
-
-.card-item:nth-of-type(3) > p:nth-of-type(2) {
-  padding-top: 7px;
-}
-
-.card-item:nth-of-type(4) > p:nth-of-type(2) {
+.card-item > p:nth-of-type(2) {
   padding-top: 7px;
 }
 
@@ -961,34 +910,19 @@ img {
   display: flex;
   width: 141px;
   height: 38px;
+  margin: 13px 0 0 14px;
+  padding: 0 11px 0 0;
   color: var(--basic-white);
   background-image: url(img/icon-main/red-button.svg);
   justify-content: center;
   align-items: center;
 }
 
-.card-item:nth-of-type(1) p:nth-of-type(3) {
-  margin: 13px 0 0 14px;
-  padding: 0 11px 0 0;
-}
-
-.card-item:nth-of-type(2) p:nth-of-type(3) {
-  margin: 13px 0 0 16px;
-  padding: 0 11px 0 0;
-}
-
-.card-item:nth-of-type(3) p:nth-of-type(3) {
-  margin: 13px 0 0 16px;
-  padding: 0 11px 0 0;
-}
-
-.card-item:nth-of-type(4) p:nth-of-type(3) {
-  margin: 13px 0 0 16px;
-  padding: 0 11px 0 0;
-}
-
 .card-item img {
-  margin-top: 22px;
+  width: 220px;
+  height: 178px;
+  object-fit: scale-down;
+  object-position: 44% 42%;
 }
 
 .card-item:hover {
@@ -1027,6 +961,15 @@ img {
   min-height: 145px;
   justify-content: center;
   align-items: center;
+  border: 1px solid #EAEAEA;
+}
+
+.partner-item:hover {
+box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.partner-item:active {
+  opacity: .5;
 }
 
 .catalog-perforators {
