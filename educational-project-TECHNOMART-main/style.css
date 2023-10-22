@@ -1211,45 +1211,69 @@ img {
 }
 
 .services h2 {
-  padding: 64px 0 25px 0;
+  padding: 65px 0 25px 0;
   margin: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
   font-size: 30px;
   line-height: 30px;
 }
 
 .services p {
-  margin: 0;
+  margin: 0 0 56px 0;
   font-family: "PT Sans", "Arial, sans-serif";
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
 }
 
-.service-item li a {
-  color: #32425c; /* root */
-  font-family: "Cuprum Bold";
-  font-size: 21px;
-  line-height: 30px;
-  text-transform: none;
-  list-style: none;
+.delivery {
+  display: flex;
+  position: relative;
+  width: 940px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.service-item {
+  padding: 0;
+}
+
+.service-item::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  left: 24.5%;
+  top: -16%;
+  background-image: url(img/icon-main/layer.svg);
 }
 
 .service-item li {
   display: flex;
   width: 240px;
   height: 61px;
-  background-color: black;
-  color: var(--basic-white);
-  
+  margin-bottom: 1px;
+  background-color: var(--purple-blue);
+  box-shadow: 0px 1px 0px 0px #293449, 0px 1px 0px 0px #405069 inset;
 }
 
 .service-item li:nth-child(1) {
   display: flex;
-  width: 240px;
-  height: 61px;
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px 0px var(--basic-white);
+}
+
+.service-item li a {
+  color: var(--basic-white);
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  text-transform: none;
+  list-style: none;
+}
+
+.service-item li:nth-child(1) a {
+  color: var(--purple-blue);
 }
 
 .contacts-main {
