@@ -60,6 +60,7 @@
   --red-orient: #b52933;
   --pale-orange-yellow: #ffd180;
   --persian-red: #ca2c37;
+  --marengo: #405069;
 }
 
 *,
@@ -803,11 +804,15 @@ img {
   justify-content: center;
 }
 
-.all-goods:hover {
+.all-goods:hover,
+.transport-companies a:hover,
+.write-link:hover {
   background-color: var(--persian-red);
 }
 
-.all-goods:active {
+.all-goods:active,
+.transport-companies a:active,
+.write-link:active {
   background-color: var(--focus-red);
 }
 
@@ -1214,7 +1219,7 @@ img {
 .marketing h2 {
   padding: 65px 0 25px 0;
   margin: 0;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1224,7 +1229,7 @@ img {
 .services p,
 .marketing p {
   margin: 0 0 56px 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
@@ -1253,35 +1258,36 @@ img {
 }
 
 .service-item li {
-  display: flex;
-  width: 240px;
-  height: 61px;
-  margin-bottom: 1px;
-  background-color: var(--purple-blue);
-  box-shadow: 0px 1px 0px 0px #293449, 0px 1px 0px 0px #405069 inset;
-}
-
-.service-item li:nth-child(1) {
-  display: flex;
-  background-color: var(--basic-white);
-  box-shadow: 0px 1px 0px 0px var(--basic-white);
-}
-
-.service-item li a {
-  display: inherit;
-  flex-wrap: wrap;
-  padding-left: 22px;
-  color: var(--basic-white);
-  font-family: "Cuprum Bold", "Arial", sans-serif;
-  font-size: 21px;
-  line-height: 30px;
-  align-content: center;
-  text-transform: none;
   list-style: none;
 }
 
-.service-item li:nth-child(1) a {
+.service-item li a:hover {
+  background-color: var(--night-blue);
+}
+
+.service-item li a:focus {
   color: var(--purple-blue);
+  background-color: var(--basic-white);
+  box-shadow: 0px 1px 0px 0px var(--basic-white),
+    0px 1px 0px 0px var(--basic-white) inset;
+}
+
+.service-item li a {
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  height: 61px;
+  margin-bottom: 1px;
+  padding-left: 22px;
+  color: var(--basic-white);
+  background-color: var(--purple-blue);
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  box-shadow: 0px 1px 0px 0px var(--night-blue),
+    0px 1px 0px 0px var(--marengo) inset;
+  align-content: center;
+  text-transform: none;
 }
 
 .marketing {
@@ -1325,7 +1331,6 @@ img {
 .contact-map h2 {
   margin: 0 0 24px 0;
   color: var(--basic-black);
-  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1335,33 +1340,26 @@ img {
 .contact-map p {
   margin: 25px 0 0 0;
   color: var(--basic-black);
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
 }
 
 .transport-companies {
-  padding-left: 37px;
-  color: #000;
-font-family: 'Cuprum';
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
+  padding: 3px 0 0 37px;
+  margin: 0;
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
   list-style: none;
   text-transform: none;
 }
 
-.contact-map {
-  width: 300px;
-  height: 100%;
-}
-
 .item-company {
   position: relative;
+  padding-bottom: 12px;
   color: var(--basic-black);
-  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1372,9 +1370,43 @@ line-height: 24px;
   position: absolute;
   width: 25px;
   height: 2px;
-  top: 5px;
-  left: -25px;
-  background-color: #EE3643;
+  top: 11px;
+  left: -37px;
+  background-color: var(--basic-red);
+}
+
+.transport-companies a,
+.write-link {
+  display: flex;
+  flex-wrap: wrap;
+  height: 38px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  font-size: 14px;
+  line-height: 18px;
+  justify-content: center;
+  align-content: center;
+}
+
+.transport-companies a {
+  width: 220px;
+  margin: 7px 0 0 -37px;
+  text-transform: uppercase;
+}
+
+.contact-map {
+  width: 300px;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.contact-company img {
+  margin-top: 32px;
+}
+
+.write-link {
+  width: 300px;
+  margin-top: 21px;
 }
 
 .description-tool {
@@ -1398,10 +1430,8 @@ line-height: 24px;
 .description p:nth-child(1) {
   margin-bottom: 25px;
   color: var(--basic-black);
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
 }
 
 .footer {
@@ -1453,6 +1483,17 @@ line-height: 24px;
   color: var(--periwinkle-crayola);
 }
 
+.footer-menu a:hover,
+.footer-submenu a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-menu a:active,
+.footer-submenu a:active {
+  opacity: 0.5;
+  text-decoration-line: none;
+}
+
 .footer-subtitle {
   display: flex;
   width: 940px;
@@ -1487,18 +1528,23 @@ line-height: 24px;
   text-transform: none;
 }
 
-.copyright-social-feedback {
-  display: flex;
+.csf {
   width: 100%;
   min-height: 107px;
-  color: var(--basic-white);
   background-color: var(--night-blue);
 }
 
+.copyright-social-feedback {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  
+}
+
 .copyright {
-  width: 228px;
+  width: 230px;
   height: 37px;
-  margin: 36px 162px 34px auto;
+  margin: 36px 160px 34px 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: none;
@@ -1530,7 +1576,7 @@ line-height: 24px;
 .feedback-developer {
   width: 286px;
   height: 37px;
-  margin: 35px auto 35px 0;
+  margin: 35px 0 35px 0;
 }
 
 .feedback-developer p {
@@ -1544,6 +1590,19 @@ line-height: 24px;
   text-transform: none;
   font-size: 16px;
   line-height: 18px;
+}
+
+.feedback-developer a {
+  color: var(--pale-orange-yellow);
+}
+
+.feedback-developer a:hover {
+  text-decoration-line: underline;
+}
+
+.feedback-developer a:active {
+  color: var(--basic-red);
+  text-decoration-line: none;
 }
 
 .feedback-developer p:nth-child(1) {

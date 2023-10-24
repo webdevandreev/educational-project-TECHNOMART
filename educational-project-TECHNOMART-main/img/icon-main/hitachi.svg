@@ -4,7 +4,6 @@
 <rect width="169" height="31" fill="url(#pattern1)"/>
 </mask>
 <g mask="url(#mask0_37502_1822)">
-<rect width="169" height="31" fill="black" fill-opacity="0.01"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
