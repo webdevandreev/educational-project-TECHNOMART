@@ -230,7 +230,7 @@ img {
 }
 
 .button-menu:focus {
-  background-color: var(-special-dark-blue);
+  background-color: var(--special-dark-blue);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1616,8 +1616,8 @@ img {
   position: fixed;
   width: 620px;
   height: 430px;
-  top: 0;
-  right: 3%;
+  top: 26.5%;
+  right: 1%;
   bottom: 43%;
   left: 0;
   margin: auto;
@@ -1653,6 +1653,7 @@ img {
   margin-top: 11px;
   border-radius: 2px;
   border: 2px solid var(--silver);
+  outline: none;
 }
 
 .text-window {
@@ -1671,6 +1672,26 @@ img {
   right: 0;
   bottom: 0;
   background-color: #f4f4f4;
+}
+
+textarea {
+  width: 460px;
+  height: 114px;
+  margin-top: 10px;
+  border: 2px solid var(--silver);
+  outline: 0;
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--aluminum);
+  padding-top: 2px;
+  padding-left: 9px;
+}
+
+textarea::-moz-placeholder {
+  color: var(--aluminum);
+  padding-top: 2px;
+  padding-left: 9px;
 }
 
 .text-send {
@@ -1714,8 +1735,9 @@ img {
   display: block;
 }
 
-.modal input::placeholder {
-  color: #a9a9a9;
+.modal input::placeholder,
+textarea::placeholder {
+  color: var(--aluminum);
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
