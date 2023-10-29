@@ -1611,21 +1611,6 @@ img {
   margin-right: 51px;
 }
 
-.modal-write {
-  display: none;
-  position: fixed;
-  width: 620px;
-  height: 430px;
-  top: 26.5%;
-  right: 1%;
-  bottom: 43%;
-  left: 0;
-  margin: auto;
-  background-color: var(--basic-white);
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15),
-    inset 0 7px var(--basic-red);
-}
-
 .name-mail {
   display: flex;
   width: 460px;
@@ -1703,8 +1688,40 @@ textarea::-moz-placeholder {
   border: none;
 }
 
+.modal-write {
+  display: none;
+  position: fixed;
+  width: 620px;
+  height: 430px;
+  top: 26.5%;
+  right: 1%;
+  bottom: 43%;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15),
+    inset 0 7px var(--basic-red);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000%);
+  }
+  70% {
+    transform: translateY(30%);
+  }
+  90% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-show {
   display: block;
+  animation-name: bounce;
+  animation-duration: .6s;
 }
 
 .modal-close {
