@@ -2,32 +2,32 @@
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/cuprum.woff) format("woff"),
-    url(fonts/cuprum.woff2) format("woff2");
+  src: url(../fonts/cuprum.woff) format("woff"),
+    url(../fonts/cuprum.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "Cuprum Bold";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/cuprumbold.woff) format("woff"),
-    url(fonts/cuprumbold.woff2) format("woff2");
+  src: url(../fonts/cuprumbold.woff) format("woff"),
+    url(../fonts/cuprumbold.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/ptsans.woff) format("woff"),
-    url(fonts/ptsans.woff2) format("woff2");
+  src: url(../fonts/ptsans.woff) format("woff"),
+    url(../fonts/ptsans.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans Bold";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/ptsansbold.woff) format("woff"),
-    url(fonts/ptsansbold.woff2) format("woff2");
+  src: url(../fonts/ptsansbold.woff) format("woff"),
+    url(../fonts/ptsansbold.woff2) format("woff2");
 }
 
 :root {
@@ -305,7 +305,7 @@ img {
   width: 18px;
   height: 19px;
   margin-right: 16px;
-  background-image: url(img/icon-header/icon-phone.svg);
+  background-image: url(../img/icon-header/icon-phone.svg);
 }
 
 .address {
@@ -341,7 +341,7 @@ img {
 }
 
 .user-name:hover.user-name::before {
-  background-image: url(img/icon-header/icon-user-hover.svg);
+  background-image: url(../img/icon-header/icon-user-hover.svg);
 }
 
 .user-name:active {
@@ -349,7 +349,7 @@ img {
 }
 
 .user-name:active.user-name::before {
-  background-image: url(img/icon-header/icon-user.svg);
+  background-image: url(../img/icon-header/icon-user.svg);
 }
 
 .user-name::before {
@@ -357,7 +357,7 @@ img {
   width: 20px;
   height: 18px;
   margin-right: 21px;
-  background-image: url(img/icon-header/icon-user.svg);
+  background-image: url(../img/icon-header/icon-user.svg);
 }
 
 .logout-button {
@@ -406,15 +406,15 @@ img {
   width: 20px;
   height: 17px;
   margin-right: 6px;
-  background-image: url(img/icon-header/icon-login-in.svg);
+  background-image: url(../img/icon-header/icon-login-in.svg);
 }
 
 .log-in:hover.log-in::before {
-  background-image: url(img/icon-header/icon-login-hover.svg);
+  background-image: url(../img/icon-header/icon-login-hover.svg);
 }
 
 .log-in:active.log-in::before {
-  background-image: url(img/icon-header/icon-login-in.svg);
+  background-image: url(../img/icon-header/icon-login-in.svg);
 }
 
 .register {
@@ -593,7 +593,7 @@ img {
   height: 65px;
   top: 31px;
   right: 43px;
-  background-image: url(img/icon-main/icon-1.svg);
+  background-image: url(../img/icon-main/icon-1.svg);
 }
 
 .main > .features-list .features-item:nth-of-type(2)::after {
@@ -603,7 +603,7 @@ img {
   height: 61px;
   top: 34px;
   right: 31px;
-  background-image: url(img/icon-main/icon-2.svg);
+  background-image: url(../img/icon-main/icon-2.svg);
 }
 
 .main > .features-list .features-item:nth-of-type(3)::after {
@@ -613,7 +613,7 @@ img {
   height: 62px;
   top: 31px;
   right: 31px;
-  background-image: url(img/icon-main/icon-3.svg);
+  background-image: url(../img/icon-main/icon-3.svg);
 }
 
 .main > .features-list .features-item:nth-of-type(1)::after {
@@ -719,13 +719,13 @@ img {
 .button-left {
   width: 22px;
   height: 40px;
-  background-image: url(img/icon-main/icon-left.svg);
+  background-image: url(../img/icon-main/icon-left.svg);
 }
 
 .button-right {
   width: 22px;
   height: 40px;
-  background-image: url(img/icon-main/Shape-right.svg);
+  background-image: url(../img/icon-main/Shape-right.svg);
 }
 
 .dots-left {
@@ -763,7 +763,7 @@ img {
   height: 72px;
   top: 26px;
   right: 45px;
-  background-image: url(img/icon-main/icon-4.svg);
+  background-image: url(../img/icon-main/icon-4.svg);
 }
 
 .slide-features > .features-list .features-item:nth-of-type(2)::after {
@@ -773,7 +773,7 @@ img {
   height: 63px;
   top: 32px;
   right: 31px;
-  background-image: url(img/icon-main/icon-5.svg);
+  background-image: url(../img/icon-main/icon-5.svg);
 }
 
 .popular-products {
@@ -919,7 +919,7 @@ img {
   margin: 13px 0 0 14px;
   padding: 0 11px 0 0;
   color: var(--basic-white);
-  background-image: url(img/icon-main/red-button.svg);
+  background-image: url(../img/icon-main/red-button.svg);
   justify-content: center;
   align-items: center;
 }
@@ -1029,7 +1029,7 @@ img {
   height: 23px;
   top: 0;
   left: -36px;
-  background-image: url(img/icon-main/checkbox-off.svg);
+  background-image: url(../img/icon-main/checkbox-off.svg);
 }
 
 .power-option .filter-input-checkbox + label::before {
@@ -1039,7 +1039,7 @@ img {
   height: 25px;
   top: 0;
   left: -36px;
-  background-image: url(img/icon-main/radio-off.svg);
+  background-image: url(../img/icon-main/radio-off.svg);
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1049,7 +1049,7 @@ img {
   height: 23px;
   top: 0px;
   left: -36px;
-  background-image: url(img/icon-main/checkbox-on.svg);
+  background-image: url(../img/icon-main/checkbox-on.svg);
 }
 
 .power-option .filter-input-checkbox:checked + label::before {
@@ -1059,26 +1059,26 @@ img {
   height: 25px;
   top: 0;
   left: -36px;
-  background-image: url(img/icon-main/radio-on.svg);
+  background-image: url(../img/icon-main/radio-on.svg);
 }
 
 .filter-option:hover .filter-input-checkbox:checked + label::before {
-  background-image: url(img/icon-main/checkbox-on-hover.svg);
+  background-image: url(../img/icon-main/checkbox-on-hover.svg);
   background-repeat: no-repeat;
 }
 
 .power-option:hover .filter-input-checkbox:checked + label::before {
-  background-image: url(img/icon-main/radio-on-hover.svg);
+  background-image: url(../img/icon-main/radio-on-hover.svg);
   background-repeat: no-repeat;
 }
 
 .filter-option:hover .filter-input-checkbox + label::before {
-  background-image: url(img/icon-main/checkbox-off-hover.svg);
+  background-image: url(../img/icon-main/checkbox-off-hover.svg);
   background-repeat: no-repeat;
 }
 
 .power-option:hover .filter-input-checkbox + label::before {
-  background-image: url(img/icon-main/radio-off-hover.svg);
+  background-image: url(../img/icon-main/radio-off-hover.svg);
   background-repeat: no-repeat;
 }
 
@@ -1255,7 +1255,7 @@ img {
   height: 279px;
   left: 24.5%;
   top: -16%;
-  background-image: url(img/icon-main/layer.svg);
+  background-image: url(../img/icon-main/layer.svg);
 }
 
 .service-item li {
@@ -1307,7 +1307,7 @@ img {
   height: 261px;
   right: 0;
   top: 33px;
-  background-image: url(img/icon-main/Layer%20131%201.svg);
+  background-image: url(../img/icon-main/Layer%20131%201.svg);
 }
 
 .marketing h2 {
@@ -1659,25 +1659,17 @@ img {
   background-color: #f4f4f4;
 }
 
+
+
 textarea {
   width: 460px;
   height: 114px;
   margin-top: 10px;
   border: 2px solid var(--silver);
   outline: 0;
-}
-
-textarea::-webkit-input-placeholder {
-  color: var(--aluminum);
-  padding-top: 2px;
   padding-left: 9px;
 }
 
-textarea::-moz-placeholder {
-  color: var(--aluminum);
-  padding-top: 2px;
-  padding-left: 9px;
-}
 
 .text-send {
   position: absolute;
@@ -1703,25 +1695,13 @@ textarea::-moz-placeholder {
     inset 0 7px var(--basic-red);
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000%);
-  }
-  70% {
-    transform: translateY(30%);
-  }
-  90% {
-    transform: translateY(-10%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: .6s;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1758,4 +1738,44 @@ textarea::placeholder {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
