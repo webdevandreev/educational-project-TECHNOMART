@@ -506,7 +506,7 @@ img {
   width: 940px;
   min-height: 18px;
   padding: 0;
-  margin: 21px auto 20px auto;
+  margin: 23px auto 18px auto;
   list-style: none;
 }
 
@@ -521,10 +521,10 @@ img {
 }
 
 .crumbs-item a {
-  padding-right: 17px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  padding-right: 23px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  color: var(--basic-black); 
+  color: var(--basic-black);
 }
 
 .crumbs-item:nth-child(1) {
@@ -799,7 +799,7 @@ img {
   display: flex;
   width: 940px;
   height: 89px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   background-color: var(--beige);
   justify-content: space-between;
   align-items: center;
@@ -868,18 +868,34 @@ img {
   position: relative;
 }
 
-.sorting {
+.sorting-list {
   display: flex;
   width: 700px;
   min-height: 38px;
+  padding-left: 20px;
   margin: 20px 0 0 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   background-color: var(--pearl-white);
-  justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
-.sorting p {
-  margin: 0 auto;
+.sorting-list li:nth-child(1) {
+  padding-right: 70px;
+}
+
+.sorting-list li:nth-child(2) {
+  padding: 0 35px 0 70px; 
+}
+
+.sorting-list li:nth-child(3) {
+  padding: 0 33px 0 35px; 
+}
+
+.sorting-list li:nth-child(4) {
+  padding: 0 46px 0 32px; 
 }
 
 .perforators-list {
@@ -1009,8 +1025,11 @@ img {
   height: 38px;
   margin: 20px 0 0 0;
   padding-left: 18px;
-  align-items: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   background-color: var(--pearl-white);
+  align-items: center;
 }
 
 .filter ul {
@@ -1022,6 +1041,10 @@ img {
   padding: 0;
   margin: 39px 0 26px 0;
   border: none;
+}
+
+.filter fieldset:not(.filter fieldset:nth-of-type(3)) {
+   border-bottom: 1px solid blue;
 }
 
 .filter-option,
