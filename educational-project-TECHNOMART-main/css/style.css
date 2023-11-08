@@ -1387,10 +1387,17 @@ img {
   width: 38px;
   height: 38px;
   margin-right: 10px;
+  color: var(--basic-black);
   text-align: center;
   align-content: center;
   border-radius: 2px;
   border: 1px solid var(--button-filter);
+}
+
+.page-number-active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
 }
 
 .page-next {
@@ -1406,20 +1413,12 @@ img {
   border: 1px solid var(--button-filter);
 }
 
-.page-item:nth-child(1) {
-  width: 38px;
-  margin-right: 10px;
-  background-color: red;
-  border-radius: 2px;
-  border: none;
-}
-
-.page-number:hover,
+.page-number:not(.page-number-active):hover,
 .page-next:hover {
   border: 1px solid var(--silver);
 }
 
-.page-number:active,
+.page-number:not(.page-number-active):active,
 .page-next:active {
   color: var(--basic-black);
   border: 1px solid var(--basic-red);
@@ -1937,7 +1936,8 @@ textarea {
   height: 21px;
   top: 21px;
   right: 11px;
-  background-color: red;
+  background-color: var(--basic-white);
+  background-image: url(../img/icon-main/icon-close.svg);
   border: 0;
   cursor: pointer;
 }
