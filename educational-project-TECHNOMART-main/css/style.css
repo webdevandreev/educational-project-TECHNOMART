@@ -547,10 +547,12 @@ img {
 }
 
 .main > .features-list:nth-of-type(1) {
-  margin: 59px auto 20px auto;
+  margin: 59px auto 0 auto;
 }
 
-.features-item {
+.features-item,
+.discount-item,
+.delivery-item {
   position: relative;
   width: 300px;
   height: 123px;
@@ -562,7 +564,9 @@ img {
   margin-right: 0;
 }
 
-.features-item p {
+.features-item p,
+.discount-item p,
+.delivery-item p {
   margin: 20px auto 14px 23px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
   font-size: 24px;
@@ -571,7 +575,9 @@ img {
   text-transform: none;
 }
 
-.features-item a {
+.features-item a,
+.discount-item a,
+.delivery-item a {
   display: flex;
   width: 135px;
   height: 38px;
@@ -582,16 +588,19 @@ img {
   justify-content: center;
 }
 
-.features-item a:hover {
+.features-item a:hover,
+.discount-item a:hover,
+.delivery-item a:hover {
   background-color: rgba(197, 197, 197, 0.3);
 }
 
-.features-item a:focus {
+.features-item a:focus,
+.discount-item a:focus,
+.delivery-item a:focus {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
-.main .features-item:nth-of-type(1),
-.main .slide-features .features-item:nth-of-type(2) {
+.main .features-item:nth-of-type(1) {
   background-color: var(--special-yellow);
 }
 
@@ -603,11 +612,7 @@ img {
   background-color: var(--light-plum);
 }
 
-.slide-features .features-item:nth-of-type(1) {
-  background-color: var(--grandma-apples);
-}
-
-.main > .features-list .features-item:nth-of-type(1) a::after {
+.features-item:nth-of-type(1) a::after {
   position: absolute;
   content: "";
   width: 44px;
@@ -617,7 +622,7 @@ img {
   background-image: url(../img/icon-main/icon-1.svg);
 }
 
-.main > .features-list .features-item:nth-of-type(2)::after {
+.features-list .features-item:nth-of-type(2)::after {
   position: absolute;
   content: "";
   width: 75px;
@@ -627,7 +632,7 @@ img {
   background-image: url(../img/icon-main/icon-2.svg);
 }
 
-.main > .features-list .features-item:nth-of-type(3)::after {
+.features-list .features-item:nth-of-type(3)::after {
   position: absolute;
   content: "";
   width: 78px;
@@ -637,7 +642,7 @@ img {
   background-image: url(../img/icon-main/icon-3.svg);
 }
 
-.main > .features-list .features-item:nth-of-type(1)::after {
+.features-list .features-item:nth-of-type(1)::after {
   content: "new";
   display: flex;
   position: absolute;
@@ -657,7 +662,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
-  margin: 0 auto 59px auto;
+  margin: 20px auto 59px auto;
 }
 
 .slide {
@@ -765,19 +770,25 @@ img {
   border-radius: 50%;
 }
 
-.slide-features .features-list {
+.discount-delivery {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 300px;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
+  padding: 0;
+  justify-content: space-between;
 }
 
-.slide-features .features-list .features-item:nth-of-type(1) {
-  margin-bottom: 20px;
+.discount-item {
+  background-color: var(--grandma-apples);
 }
 
-.slide-features > .features-list .features-item:nth-of-type(1)::after {
+.delivery-item {
+  background-color: var(--special-yellow);
+}
+
+.discount-item::after {
   position: absolute;
   content: "";
   width: 59px;
@@ -787,7 +798,7 @@ img {
   background-image: url(../img/icon-main/icon-4.svg);
 }
 
-.slide-features > .features-list .features-item:nth-of-type(2)::after {
+.delivery-item::after {
   position: absolute;
   content: "";
   width: 78px;
@@ -850,7 +861,7 @@ img {
   list-style: none;
 }
 
-.main .cards-list .card-item:nth-of-type(2n + 2)::after {
+.cards-list .card-item:nth-of-type(2n + 2)::after {
   content: "new";
   display: flex;
   position: absolute;
@@ -896,24 +907,14 @@ img {
   list-style: none;
 }
 
-.sorting-list li :not(.sorting-list li:nth-child(1)) {
-  text-decoration: underline dashed red;
-  text-underline-offset: 3px;
-}
-
 .sorting-list li :not(.sorting-list li:nth-child(1)):hover {
   text-decoration: underline dashed red;
   text-underline-offset: 3px;
 }
 
-.sorting-list li :not(.sorting-list li:nth-child(1)):focus {
-  text-decoration: none;
-  text-underline-offset: 3px;
-}
-
+.sorting-list li :not(.sorting-list li:nth-child(1)):focus,
 .sorting-list li :not(.sorting-list li:nth-child(1)):active {
   text-decoration: none;
-  text-underline-offset: 3px;
 }
 
 .sorting-list li:nth-child(1) {
@@ -1063,8 +1064,8 @@ img {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.main .perforators-list .card-item:nth-of-type(3n + 3)::after,
-.main .perforators-list .card-item:nth-of-type(3n + 4)::after {
+.perforators-list .card-item:nth-of-type(3n + 3)::after,
+.perforators-list .card-item:nth-of-type(3n + 4)::after {
   content: "new";
   display: flex;
   position: absolute;
@@ -1329,7 +1330,7 @@ img {
   margin: 38px 44px 10px 41px;
   color: var(--basic-white);
   background-color: var(--dark-yellow-green);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   align-items: center;
