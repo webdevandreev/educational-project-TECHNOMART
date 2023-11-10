@@ -1886,7 +1886,7 @@ img {
   height: 112px;
   right: 0;
   bottom: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /*поправь*/
 }
 
 textarea {
@@ -1907,19 +1907,43 @@ textarea {
   border: none;
 }
 
-.modal-write {
+.modal {
   display: none;
   position: fixed;
-  width: 620px;
-  height: 430px;
   top: 26.5%;
   right: 1%;
   bottom: 43%;
   left: 0;
   margin: auto;
+}
+
+.modal-write {
+  width: 620px;
+  height: 430px;
   background-color: var(--basic-white);
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15),
     inset 0 7px var(--basic-red);
+}
+
+.modal-map {
+  width: 943px;
+  height: 442px;
+  border-top: 7px solid var(--basic-red);
+}
+
+.modal-buy {
+  width: 620px;
+  height: 170px;
+}
+
+.modal-buy::after {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 112px;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f4; /*editor*/
 }
 
 .modal-show {
@@ -1937,27 +1961,10 @@ textarea {
   height: 21px;
   top: 21px;
   right: 11px;
-  background-color: var(--basic-white);
+  background-color: transparent;
   background-image: url(../img/icon-main/icon-close.svg);
   border: 0;
   cursor: pointer;
-}
-
-.modal-map {
-  display: none;
-  position: fixed;
-  width: 943px;
-  height: 449px;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #aef;
-}
-
-.modal-map img {
-  display: block;
 }
 
 .modal input::placeholder,

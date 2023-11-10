@@ -102,7 +102,6 @@
           </div>
           <div class="slider">
             <a class="button-left" href="#" aria-label="следущее изображение"></a>
-            <!--смена изображения поменять атрибут-->
             <a class="button-right" href="#" aria-label="предыдущее изображение"></a>
           </div>
           <a href="#">открыть каталог</a>
@@ -249,8 +248,8 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <img src="img/icon-main/map.svg" width="300" height="158" alt="карта проезда в офис компании">
-        <a class="write-link" href="write.html">заблудились? напишите нам!</a>
+        <a class="map-link" href="#"><img src="img/icon-main/map.svg" width="300" height="158" alt="открыть интерактивную карту"></a>
+        <a class="write-link" href="#">заблудились? напишите нам!</a>
       </section>
     </div>
   </main>
@@ -335,12 +334,11 @@
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <section class="modal-map">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/icon-main/map-modal.png" width="943" height="449" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d296.82910833522357!2d30.317088908930273!3d59.96830485070907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU4JzA2LjAiTiAzMMKwMTknMDIuNSJF!5e0!3m2!1sru!2sru!4v1699654155148!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <script src="writeus.js"></script>
-</body>
-
-</html>
+  <script src="js/write.js"></script>
+  <script src="js/map.js"></script>
+</body></html>
