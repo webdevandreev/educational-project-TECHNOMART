@@ -1886,7 +1886,8 @@ img {
   height: 112px;
   right: 0;
   bottom: 0;
-  background-color: #f4f4f4; /*поправь*/
+  background-color: #f4f4f4;
+  /*поправь*/
 }
 
 textarea {
@@ -1929,21 +1930,87 @@ textarea {
   width: 943px;
   height: 442px;
   border-top: 7px solid var(--basic-red);
+  background-image: url(../img/icon-main/modal-map.png);
 }
 
-.modal-buy {
+.modal-basket {
+  display: none;
+  position: absolute;
   width: 620px;
-  height: 170px;
+  height: 282px;
+  margin: auto;
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: none;
+  top: 72%;
+  right: 1%;
+  bottom: 1%;
+  left: 3%;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15),
+    inset 0 7px var(--basic-red);
 }
 
-.modal-buy::after {
-    content: "";
-    position: absolute;
-    width: 620px;
-    height: 112px;
-    right: 0;
-    bottom: 0;
-    background-color: #f4f4f4; /*editor*/
+.modal-basket p {
+  display: flex;
+  padding: 57px 92px 0 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-basket p:before {
+  display: flex;
+  content: "";
+  width: 66px;
+  height: 66px;
+  margin-right: 32px;
+  background-image: url(../img/icon-main/icon-mark.svg);
+}
+
+.modal-basket::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 620px;
+  height: 112px;
+  bottom: 0;
+  background-color: #f1f1f1;
+  /*editor*/
+}
+
+.basket-list {
+  display: flex;
+  position: absolute;
+  left: 74px;
+  bottom: 20px;
+  list-style: none;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.basket-item a {
+  display: flex;
+  width: 192px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-order {
+  margin-right: 10px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.button-purchases {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .modal-show {
