@@ -658,21 +658,22 @@ img {
   text-transform: uppercase;
 }
 
-.slide-features {
+.slide-features-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
   margin: 20px auto 59px auto;
 }
 
-.slide {
+.slide-container {
   position: relative;
   width: 620px;
   height: 266px;
   background-color: lightblue;
+  overflow: hidden;
 }
 
-.slide::before {
+.slide-container::before {
   content: "";
   position: absolute;
   width: 620px;
@@ -734,7 +735,7 @@ img {
   text-transform: none;
 }
 
-.slider {
+.slider-button {
   display: flex;
   width: 576px;
   height: 40px;
