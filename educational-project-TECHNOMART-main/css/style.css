@@ -619,7 +619,7 @@ img {
   height: 65px;
   top: 31px;
   right: 43px;
-  background-image: url(../img/main/icon-1.svg);
+  background-image: url(../img/features/icon-1.svg);
 }
 
 .features-list .features-item:nth-of-type(2)::after {
@@ -629,7 +629,7 @@ img {
   height: 61px;
   top: 34px;
   right: 31px;
-  background-image: url(../img/main/icon-2.svg);
+  background-image: url(../img/features/icon-2.svg);
 }
 
 .features-list .features-item:nth-of-type(3)::after {
@@ -639,7 +639,7 @@ img {
   height: 62px;
   top: 31px;
   right: 31px;
-  background-image: url(../img/main/icon-3.svg);
+  background-image: url(../img/features/icon-3.svg);
 }
 
 .features-list .features-item:nth-of-type(1)::after {
@@ -752,7 +752,7 @@ img {
 .button-right {
   width: 22px;
   height: 40px;
-  background-image: url(../img/main/Shape-right.svg);
+  background-image: url(../img/main/icon-right.svg);
 }
 
 .dots-left {
@@ -796,7 +796,7 @@ img {
   height: 72px;
   top: 26px;
   right: 45px;
-  background-image: url(../img/main/icon-4.svg);
+  background-image: url(../img/features/icon-4.svg);
 }
 
 .delivery-item::after {
@@ -806,7 +806,7 @@ img {
   height: 63px;
   top: 32px;
   right: 31px;
-  background-image: url(../img/main/icon-5.svg);
+  background-image: url(../img/features/icon-5.svg);
 }
 
 .popular-products {
@@ -1549,7 +1549,7 @@ input[type="number"]:focus {
   height: 261px;
   right: 0;
   top: 33px;
-  background-image: url(../img/main/Layer%20131%201.svg);
+  background-image: url(../img/main/truck.svg);
 }
 
 .marketing h2 {
