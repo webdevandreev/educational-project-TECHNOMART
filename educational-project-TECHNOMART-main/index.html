@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -94,25 +94,23 @@
     </ul>
     <div class="slide-features-wrapper">
       <div class="slide-container">
-        <div class="slider">
-          <img src="img/manwork/perforatorman.jpg" width="620" height="266" alt="рабочий сверлит перфоратором отверстие в стене">
-          <img src="img/manwork/perforatorman.jpg" width="620" height="266" alt="рабочий сверлит перфоратором отверстие в стене">
-        </div>
-        <div class="slide-title">
-          <div class="paragraphs">
-            <p>перфораторы</p>
-            <p>Настоящие мужские игрушки</p>
-          </div>
-          <div class="slider-button">
-            <a class="button-left" href="#" aria-label="следущее изображение"></a>
-            <a class="button-right" href="#" aria-label="предыдущее изображение"></a>
-          </div>
-          <a href="#">открыть каталог</a>
-          <div class="slider-dots-indicators">
-            <a class="dots-left" href="#"></a>
-            <a class="dots-right" href="#"></a>
-          </div>
-        </div>
+       <button class="button-prev" aria-label="предыдущее изображение"></button>
+          <div class="slider-wrapper">
+             <div class="slider-line">
+              <div class="slide-title">
+                <p>перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+                <img src="img/manwork/perforatorman.jpg">
+               </div>
+                <div><img src="img/manwork/drillman.jpg"></div>
+              </div>
+            <button class="button-next" aria-label="следущее изображение"></button>
+            <div class="dots-wrapper">
+      <button class="dot active"></button>
+      <button class="dot active"></button>
+      </div>
+      <a class="open-catalog" href="catalog.html">открыть каталог</a>
+    </div>
       </div>
       <ul class="discount-delivery">
         <li class="discount-item">
@@ -344,6 +342,7 @@
   </section>
   <script src="js/write.min.js"></script>
   <script src="js/map.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
