@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -97,17 +97,21 @@
        <button class="button-prev" aria-label="предыдущее изображение"></button>
           <div class="slider-wrapper">
              <div class="slider-line">
-              <div class="slide-title">
+              <div class="perforatorman">
                 <p>перфораторы</p>
                 <p>Настоящие мужские игрушки</p>
-                <img src="img/manwork/perforatorman.jpg">
+                <img src="img/manwork/perforatorman.jpg" alt="рабочий сверлит отверстие в стене перфоратором">
                </div>
-                <div><img src="img/manwork/drillman.jpg"></div>
+                <div class="drillman">
+                <p>дрели</p>
+                <p>Соседям на радость!</p>
+                <img src="img/manwork/drillman.jpg" alt="рабочий сверлит отверстие в стене дрелью">
+                </div>
               </div>
             <button class="button-next" aria-label="следущее изображение"></button>
             <div class="dots-wrapper">
       <button class="dot active"></button>
-      <button class="dot active"></button>
+      <button class="dot"></button>
       </div>
       <a class="open-catalog" href="catalog.html">открыть каталог</a>
     </div>
@@ -342,7 +346,7 @@
   </section>
   <script src="js/write.min.js"></script>
   <script src="js/map.min.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/slider.min.js"></script>
 </body>
 
 </html>
