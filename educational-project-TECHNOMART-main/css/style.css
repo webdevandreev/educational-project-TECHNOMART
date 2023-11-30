@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
 .page-body {
   display: grid;
   min-height: 100%;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   background-color: var(--basic-white);
   grid-template-rows: min-content 1fr min-content;
@@ -136,7 +136,7 @@ a {
   cursor: pointer;
 }
 
-.logo .logo:focus,
+.logo:focus,
 .footer-logo:focus {
   background-color: var(--focus-red);
   box-shadow: 0px 5px 0px 0px var(--dark-red);
@@ -198,8 +198,9 @@ a {
   fill: var(--basic-red);
 }
 
-::placeholder {
+.menu-input::placeholder {
   color: var(--basic-white);
+  opacity: 1;
 }
 
 .button-menu {
@@ -217,16 +218,37 @@ a {
   font-size: 18px;
 }
 
+.add-basket {
+  display: flex;
+  width: 150px;
+  height: 42px;
+  color: var(--basic-white);
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  background-color: var(--basic-red);
+}
+
+.add-basket:hover {
+  background-color: var(--persian-red);
+}
+
+.add-basket:active {
+  background-color: var(--focus-red);
+}
+
 .wrapper a:nth-of-type(3) {
   padding-right: 15px;
   font-size: 18px;
 }
 
-.button-menu:hover g {
+.button-menu:hover g,
+.add-basket:hover g {
   opacity: 1;
 }
 
-.button-menu:focus g {
+.button-menu:focus g,
+.add-basket:focus g {
   opacity: 0.3;
 }
 
@@ -294,7 +316,7 @@ a {
   height: 45px;
   padding-left: 36px;
   color: var(--basic-red);
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
   font-size: 21px;
   font-style: normal;
   line-height: 30px;
@@ -402,24 +424,6 @@ a {
   text-transform: none;
 }
 
-.log-in:hover,
-.register:hover {
-  color: var(--basic-red);
-}
-
-.log-in:active,
-.register:active {
-  color: var(--silver);
-}
-
-.log-in::before {
-  content: "";
-  width: 20px;
-  height: 17px;
-  margin-right: 6px;
-  background-image: url(../img/header/login.svg);
-}
-
 .log-in:hover.log-in::before {
   background-image: url(../img/header/login-hover.svg);
 }
@@ -440,6 +444,24 @@ a {
   align-items: center;
   justify-content: center;
   text-transform: none;
+}
+
+.log-in:hover,
+.register:hover {
+  color: var(--basic-red);
+}
+
+.log-in:active,
+.auth .register:active {
+  color: var(--silver);
+}
+
+.log-in::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  margin-right: 6px;
+  background-image: url(../img/header/login.svg);
 }
 
 .account-list {
@@ -547,7 +569,7 @@ a {
 
 .crumbs-item a {
   padding-right: 23px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   color: var(--basic-black);
 }
@@ -591,7 +613,7 @@ a {
 .discount-item p,
 .delivery-item p {
   margin: 20px auto 14px 23px;
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white);
@@ -741,46 +763,31 @@ a {
   transition: 1s;
 }
 
-.perforatorman p:nth-child(1),
-.perforatorman p:nth-child(2) {
-  margin: 0;
+.base {
   position: absolute;
-  left: 24px;
+  width: 620px;
+  min-height: 104px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   color: var(--basic-white);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.perforatorman p:nth-child(1) {
-  top: 23px;
+.base-title {
+  display: flex;
+  width: 600px;
+  min-height: 36px;
+  margin: 21px 0 0 20px;
+  padding: 3px;
   font-size: 38px;
   line-height: 36px;
 }
 
-.perforatorman p:nth-child(2) {
-  top: 64px;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: none;
-}
-
-.drillman p:nth-child(1),
-.drillman p:nth-child(2) {
-  margin: 0;
-  position: absolute;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  color: var(--basic-white);
-}
-
-.drillman p:nth-child(1) {
-  top: 23px;
-  right: -19.5%;
-  font-size: 38px;
-  line-height: 36px;
-}
-
-.drillman p:nth-child(2) {
-  top: 64px;
-  right: -27%;
+.base-subtitle {
+  display: flex;
+  width: 258px;
+  min-height: 24px;
+  margin: 0 0 0 20px;
+  padding: 2px;
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
@@ -873,7 +880,7 @@ a {
 .goods {
   padding-left: 28px;
   color: var(--purple-blue);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
@@ -893,7 +900,9 @@ a {
 .transport-companies a:hover,
 .write-link:hover,
 .open-catalog:hover,
-.button-credit:hover {
+.button-credit:hover,
+.logo:hover,
+.footer-logo:hover {
   background-color: var(--persian-red);
 }
 
@@ -911,16 +920,15 @@ a {
   width: 940px;
   min-height: 318px;
   padding: 0;
-  margin: 20px auto 70px auto;
+  margin: 20px auto 52px auto;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 
 .button-filter {
   width: 220px;
   height: 38px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -945,7 +953,7 @@ a {
 .sorting p {
   padding: 0 45px 0 20px;
   margin: 10px 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -957,7 +965,7 @@ a {
   flex-wrap: wrap;
   padding-left: 20px;
   margin: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--pearl-white);
@@ -1063,7 +1071,6 @@ a {
   padding: 0;
   margin: 28px 0 0 20px;
   grid-column-gap: 20px;
-  grid-row-gap: 18px;
   grid-template-columns: repeat(3, 220px);
   list-style: none;
 }
@@ -1079,6 +1086,8 @@ a {
   position: relative;
   width: 220px;
   min-height: 318px;
+  margin-bottom: 18px;
+  padding-bottom: 20px;
   flex-direction: column;
   background-color: var(--basic-white);
   align-items: center;
@@ -1093,7 +1102,7 @@ a {
   margin: 0;
   color: var(--basic-black);
   text-align: center;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
@@ -1101,7 +1110,7 @@ a {
 .card-item p:nth-of-type(2):not(.card-button p) {
   font-size: 17px;
   color: var(--aluminum);
-  text-decoration: line-through;
+  text-decoration-line: line-through;
 }
 
 .card-item > p:nth-of-type(2) {
@@ -1119,6 +1128,24 @@ a {
   background-image: url(../img/main/red-button.svg);
   align-items: center;
   justify-content: center;
+}
+
+.card-item:nth-child(2) p:nth-of-type(1),
+.card-item:nth-child(2) p:nth-of-type(2),
+.card-item:nth-child(4) p:nth-of-type(2) {
+  padding-right: 5px;
+}
+
+.card-item:nth-child(1) p:nth-of-type(3) {
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.card-item:nth-child(2) p:nth-of-type(3),
+.card-item:nth-child(3) p:nth-of-type(3),
+.card-item:nth-child(4) p:nth-of-type(3) {
+  padding-right: 12px;
+  padding-bottom: 3px;
 }
 
 .card-item img {
@@ -1171,7 +1198,7 @@ a {
   height: 38px;
   margin: 20px 0 0 0;
   padding-left: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--pearl-white);
@@ -1192,7 +1219,7 @@ a {
 }
 
 .filter fieldset {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 30px;
 }
@@ -1221,7 +1248,7 @@ a {
 .power-option {
   padding-left: 35px;
   margin-bottom: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 19px;
   color: var(--basic-black);
@@ -1289,18 +1316,19 @@ a {
   background-repeat: no-repeat;
 }
 
-.power-option:hover .filter-input-checkbox:checked + label::before {
-  background-image: url(../img/radio/radio-on-hover.svg);
-  background-repeat: no-repeat;
-}
-
 .filter-option:hover .filter-input-checkbox + label::before {
   background-image: url(../img/checkbox/checkbox-off-hover.svg);
   background-repeat: no-repeat;
 }
 
-.power-option:hover .filter-input-checkbox + label::before {
+  .filter-input:hover + label::before {
   background-image: url(../img/radio/radio-off-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.power-option .filter-input-checkbox:checked:hover + label::before,
+.power-option .filter-input-checkbox:checked:focus + label::before {
+  background-image: url(../img/radio/radio-on-hover.svg);
   background-repeat: no-repeat;
 }
 
@@ -1368,21 +1396,26 @@ a {
   color: var(--basic-black);
   background-color: var(--pearl-white);
   text-align: center;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
   border: none;
   border-radius: 5px;
   outline: none;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.min-price [type="number"]::-webkit-outer-spin-button,
+.min-price [type="number"]::-webkit-inner-spin-button,
+.max-price [type="number"]::-webkit-outer-spin-button,
+.max-price [type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
+.min-price [type='number'],
+.max-price [type='number'],
+.min-price [type="number"]:hover,
+.max-price [type="number"]:hover,
+.min-price [type="number"]:focus,
+.max-price [type="number"]:focus {
   appearance: none;
   -moz-appearance: textfield;
 }
@@ -1411,6 +1444,7 @@ input[type="number"]:focus {
   border-radius: 2px;
   border: none;
   box-shadow: 0px -3px 0px 0px #367315 inset;
+  /*var*/
   text-transform: uppercase;
   cursor: pointer;
   align-items: center;
@@ -1536,7 +1570,7 @@ input[type="number"]:focus {
   padding: 65px 0 25px 0;
   margin: 0;
   color: var(--purple-blue);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1548,7 +1582,7 @@ input[type="number"]:focus {
 .slider-guarantee p,
 .slider-credit p {
   margin: 0 0 4px 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
@@ -1599,7 +1633,7 @@ input[type="number"]:focus {
   padding-left: 22px;
   color: var(--basic-white);
   background-color: var(--purple-blue);
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
   font-size: 21px;
   line-height: 30px;
   box-shadow: 0px 1px 0px 0px var(--night-blue),
@@ -1734,7 +1768,7 @@ input[type="number"]:focus {
 .contact-map p {
   margin: 25px 0 0 0;
   color: var(--basic-black);
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
@@ -1781,6 +1815,8 @@ input[type="number"]:focus {
   background-color: var(--basic-red);
   font-size: 14px;
   line-height: 18px;
+  justify-content: center;
+  align-content: center;
 }
 
 .transport-companies a {
@@ -1820,7 +1856,7 @@ input[type="number"]:focus {
   margin: auto;
   padding: 0 33px 20px 0;
   color: var(--basic-black);
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
@@ -1829,7 +1865,7 @@ input[type="number"]:focus {
 .description p:nth-child(1) {
   margin-bottom: 25px;
   color: var(--basic-black);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2038,8 +2074,8 @@ input[type="number"]:focus {
 .input-window input {
   width: 220px;
   height: 38px;
-  padding-left: 10px;
-  margin-top: 11px;
+  padding-left: 9px;
+  margin: 12px 0 0 -1px;
   border-radius: 2px;
   border: 2px solid var(--silver);
   outline: none;
@@ -2063,19 +2099,19 @@ input[type="number"]:focus {
   background-color: var(--smoky-white);
 }
 
-textarea {
+.text-letter {
   width: 460px;
   height: 114px;
-  margin-top: 10px;
+  margin: 11px 0 0 -1px;
   border: 2px solid var(--silver);
   outline: 0;
-  padding-left: 9px;
+  padding: 5px 9px;
 }
 
 .text-send {
   position: absolute;
   width: 460px;
-  left: 80px;
+  left: 79px;
   bottom: 37px;
   text-transform: uppercase;
   border: none;
@@ -2104,6 +2140,21 @@ textarea {
   height: 442px;
   border-top: 7px solid var(--basic-red);
   background-image: url(../img/main/modal-map.png);
+}
+
+.modal-buy {
+  padding-left: 22px;
+}
+
+.modal-buy::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 72px;
+  top: 47px;
+  background-image: url(../img/main/icon-basket.svg);
+  opacity: 0.3;
 }
 
 .modal-basket {
@@ -2205,9 +2256,9 @@ textarea {
 }
 
 .modal input::placeholder,
-textarea::placeholder {
+.text-letter::placeholder {
   color: var(--aluminum);
-  font-family: "PT Sans";
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
