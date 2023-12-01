@@ -64,6 +64,7 @@
   --button-filter: #e5e5e5;
   --rich-yellowish-green: #518534;
   --smoky-white: #f1f1f1;
+  --deep-yellow-green: #367315;
 }
 
 *,
@@ -796,24 +797,26 @@ a {
 .dots-wrapper {
   display: flex;
   position: absolute;
-  left: 47.5%;
-  bottom: 35px;
-  width: 34px;
+  width: 30px;
   height: 12px;
+  left: 47.5%;
+  bottom: 34px;
+  justify-content: space-between;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  margin-right: 8px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
   background-color: var(--basic-white);
   border-radius: 50%;
-  border: none;
-  box-shadow: inset 0 0 0 3px var(--basic-white);
+  border: 0;
+  cursor: pointer;
 }
 
 .active {
   background-color: var(--basic-red);
+  border: 2px solid var(--basic-white);
 }
 
 .open-catalog {
@@ -1321,7 +1324,7 @@ a {
   background-repeat: no-repeat;
 }
 
-  .filter-input:hover + label::before {
+.filter-input:hover + label::before {
   background-image: url(../img/radio/radio-off-hover.svg);
   background-repeat: no-repeat;
 }
@@ -1443,8 +1446,7 @@ a {
   line-height: 18px;
   border-radius: 2px;
   border: none;
-  box-shadow: 0px -3px 0px 0px #367315 inset;
-  /*var*/
+  box-shadow: 0px -3px 0px 0px var(--deep-yellow-green) inset;
   text-transform: uppercase;
   cursor: pointer;
   align-items: center;
