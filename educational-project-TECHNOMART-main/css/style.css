@@ -204,14 +204,34 @@ a {
   opacity: 1;
 }
 
-.button-menu {
+.add-bookmark-active {
+  background-color: var(--basic-red);
+}
+
+.add-bookmark {
   display: flex;
   width: 150px;
   height: 42px;
   color: var(--basic-white);
+  background-color: transparent;
   align-items: center;
   justify-content: center;
   text-transform: none;
+}
+
+.add-bookmark:hover g,
+.add-basket:hover g {
+  opacity: 1;
+}
+
+.button-menu:focus g,
+.add-basket:focus g {
+  opacity: 0.3;
+}
+
+.add-bookmark:focus {
+  background-color: var(--special-dark-blue);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .bookmarked {
@@ -243,20 +263,6 @@ a {
   font-size: 18px;
 }
 
-.button-menu:hover g,
-.add-basket:hover g {
-  opacity: 1;
-}
-
-.button-menu:focus g,
-.add-basket:focus g {
-  opacity: 0.3;
-}
-
-.button-menu:focus {
-  background-color: var(--special-dark-blue);
-  color: rgba(255, 255, 255, 0.5);
-}
 
 .icon-bookmark {
   margin-right: 8px;
@@ -558,7 +564,7 @@ a {
   list-style: none;
 }
 
-.crumbs-list li:not(.crumbs-list li:nth-of-type(1))::before {
+.crumbs-list li + li::before {
   display: inline-flex;
   content: "";
   width: 8px;
@@ -918,13 +924,13 @@ a {
 }
 
 .cards-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   width: 940px;
   min-height: 318px;
   padding: 0;
   margin: 20px auto 52px auto;
-  justify-content: space-between;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 220px);
   list-style: none;
 }
 
@@ -1491,12 +1497,12 @@ a {
   display: flex;
   min-width: 284px;
   height: 38px;
-  margin: 48px 0 59px 20px;
+  margin: 30px 0 59px 20px;
 }
 
 .page-list {
   display: flex;
-  padding-left: 10px;
+  padding: 0;
   margin: auto 0;
   list-style: none;
 }
@@ -1533,6 +1539,11 @@ a {
   border: 1px solid var(--button-filter);
   text-transform: uppercase;
   background-color: var(--basic-white);
+}
+
+.prev {
+  display: none;
+  margin-right: 10px;
 }
 
 .page-number:not(.page-number-active):hover,
@@ -2127,6 +2138,7 @@ a {
   bottom: 43%;
   left: 0;
   margin: auto;
+  z-index: 1000;
 }
 
 .modal-write {
